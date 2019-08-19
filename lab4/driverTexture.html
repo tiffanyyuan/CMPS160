@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Draw a point with a mouse click</title>
+  </head>
+  
+  <body onload="main()">
+
+    <canvas id="webgl" width="500" height="500" style="border:1px solid #000000;">  <!-- Creates a canvas that is 500 x 500 in dimension, added a border so its easier to tell where the canvas ends-->
+    Please use a browser that supports "canvas"
+    </canvas>
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+	<script src="../lib/cuon-matrix.js"></script>
+    <script src="p4.js"></script>
+	<br>
+	PROJECTION
+	<input type="button" value="Perspective" id="button2" onclick="setProj(this)" />
+	<br>
+	DIFFUSE SHADING 
+	<input type="button" name ='shading' value="ON" id="button1" onclick="toggle(this)" />
+	<br>
+	NORMALS
+	<input type="button" onclick="shownormals(this)" value="OFF">
+	<br>
+	GLOSSINESS FACTOR <select onchange="Glossiness(this)">
+	<option value="OFF">OFF</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+</select> <br>
+  </body>
+</html>
